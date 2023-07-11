@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Florencia Moyano</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="carrousel.css">
+    <!-- Fontawesome Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Florencia Moyano</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Sobre Mí</a></li>
+          <li><a href="#projects">Experiencia</a></li>
+          <li><a href="#experience">Herramientas</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Florencia Moyano</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">Sobre Mi</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Experiencia</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Herramientas</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contacto</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/florencia.png" alt="Florencia Moyano " />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hola! Soy</p>
+        <h1 class="title">Florencia</h1>
+        <p class="section__text__p2">Comunity Manager</p>
+         <p class="section__text__p2">Analista en Marketing Digital</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Descargar CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contactar 
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./assets/instagram.png"
+            alt="My instagram profile"
+            class="iconn"
+            
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Te cuento</p>
+      <h1 class="title">Sobre Mí</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/WhatsApp Image 2023-07-10 at 21.29.35.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experiencia</h3>
+              <p>2+ años<br />Trabajando con empresas de forma profesional.</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Educacion</h3>
+              <p>Periodismo, Universidad Maza.<br />Comunity Manager y Analista en Marketing Digital.</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+            Como asistente de marketing y comunicación institucional,
+            así como community manager, me caracterizo por poner un desempeño
+            importante en la promoción y difusión de la marca de la empresa. 
+            Mi creatividad, habilidades de comunicación
+            y conocimiento de las últimas tendencias en marketing digital me permiten llevar
+            a cabo campañas efectivas y fortalecer la relación entre la empresa y su 
+            audiencia en línea.
+            Mi capacidad para comunicarme eficazmente, tanto por escrito como de forma verbal,
+            es fundamental para tu éxito en este campo. Además, tengo habilidades analíticas
+            para interpretar métricas y datos, y utilizarlos para mejorar las estrategias de
+            marketing y comunicación.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Mi reciente</p>
+      <h1 class="title">Experiencia</h1>
+     <div class="container_cardexp">
+      <div class="card5">
+        <img src="/images/magestixrecorte.PNG" alt="">
+        <div class="card__descr-wrapper">
+          <h3 class="card__title">
+          Magestix
+        </h3>
+        <p class="card__descr">
+          Community Manager, manejo de redes sociales , producción de contenido, análisis de la 
+          competencia, estrategia
+          comercial y branding.
+        </p>
+        </div>
+      </div>
+      <div class="card5">
+        <img src="/images/andesrecorteeeee.PNG" alt="">
+        <div class="card__descr-wrapper">
+          <h3 class="card__title">
+          Andes Salud
+        </h3>
+        <p class="card__descr">
+          Marketing y Comunicación Institucional, organización de campañas publicitarias 
+          (Google Ads y Facebook Meta Ads), estrategia comercial, gestión de proyectos.
+        </p>
+        </div>
+      </div>
+      <div class="card5">
+          <img src="/images/keyword.png" alt="">
+        <div class="card__descr-wrapper">
+          <h3 class="card__title">
+            Keyword
+        </h3>
+        <p class="card__descr">
+          Marketing Digital, redes sociales, gestión de campañas, 
+          trabajo en equipo junto con el área de diseño, estrategias de contenidos
+           desarrollo de campaña creativa.
+        </p>
+        </div>
+      </div>
+      <div class="card5">
+        <img src="/images/martinrecorte.PNG" alt="">
+        <div class="card__descr-wrapper">
+          <h3 class="card__title">
+          Martin Aveiro <br>Precandidato a diputado Nacional 
+        </h3>
+        <p class="card__descr">
+          Community Manager, gestión de redes, contenido de 
+          alta calidad y desarrollo de campaña creativa.
+        </p>
+        </div>
+      </div>
+
+     </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explora mis</p>
+      <h1 class="title">Herramientas</h1>
+      <div id="carrousel">
+      <div class="wrapper">
+        <i id="left" class="fa-solid fa-angle-left"></i>
+        <ul class="carousel">
+          <li class="card">
+            <div class="img"><img src="images/meta-ads-manager (1).jpg" alt="img" draggable="false"></div>
+            <h2>Meta Ads Manager</h2>
+          </li>
+          <li class="card">
+            <div class="img"><img src="images/googleadd.nuevo.jpg" alt="img" draggable="false"></div>
+            <h2>Google Ads</h2>
+          </li>
+          <li class="card">
+            <div class="img"><img src="images/facebook-ads-modified.png" alt="img" draggable="false"></div>
+            <h2>Facebook Ads</h2>
+          </li>
+          <li class="card">
+            <div class="img"><img src="images/643_hubspot.jpg" alt="img" draggable="false"></div>
+            <h2>HubSpot</h2>
+          </li>
+          <li class="card">
+            <div class="img"><img src="images/fidelity.jpg" alt="img" draggable="false"></div>
+            <h2>Fidelity Tools</h2>
+          </li>
+          <li class="card">
+            <div class="img"><img src="images/canvanuevo.png" alt="img" draggable="false"></div>
+            <h2>Canvas</h2>
+          </li>
+          <li class="card">
+            <div class="img"><img src="images/ilustrador_318-452402.jpg" alt="img" draggable="false"></div>
+            <h2>Adobe Illustrator</h2>
+          </li>
+          <li class="card">
+            <div class="img"><img src="images/capcut.png" alt="img" draggable="false"></div>
+            <h2>Capcut</h2>
+          </li>
+ 
+        </ul>
+        <i id="right" class="fa-solid fa-angle-right"></i>
+      </div>
+    </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Trabajemos juntos!</p>
+      <h1 class="title">Contacto</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Sobre Mí</a></li>
+            <li><a href="#projects">Experiencia</a></li>
+            <li><a href="#experience">Herramientas</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="carrousel.js"></script>
+  </body>
+</html>
