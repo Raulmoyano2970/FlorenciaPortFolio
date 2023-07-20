@@ -68,15 +68,15 @@ const infiniteScroll = () => {
     if(!wrapper.matches(":hover")) autoPlay();
 }
 //Por si queremos que se mueva solo
-const autoPlay = () => {
-    if(window.innerWidth < 800 || !isAutoPlay) return; 
-    timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 2500);
-}
-autoPlay();
+// const autoPlay = () => {
+//     if(window.innerWidth < 800 || !isAutoPlay) return; 
+//     timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 2500);
+// }
+// autoPlay();
 
 carousel.addEventListener("mousedown", dragStart);
 carousel.addEventListener("mousemove", dragging);
 document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("scroll", infiniteScroll);
 wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
-wrapper.addEventListener("mouseleave", autoPlay);
+wrapper.addEventListener("mouseleave", ); //autoPlay
